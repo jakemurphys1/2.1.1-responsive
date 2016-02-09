@@ -5811,9 +5811,11 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+img {
+  max-width: 100%; }
+
 body {
-  background-image: url("images/skateboarder.jpeg");
-  background-repeat: no-repeat;
+  background-image: url("../images/skateboard-images/bg.jpg");
   background-size: 100%; }
 
 .subscribe-link {
@@ -5826,7 +5828,7 @@ body {
   right: 80px;
   margin-top: 30px;
   font-size: 20px;
-  color: white; }
+  color: black; }
 
 .social-links a {
   color: white; }
@@ -5840,15 +5842,14 @@ body {
   border-bottom: lightgray 5px solid; }
 
 .primary-nav {
-  margin-left: -3px; }
+  margin: auto; }
+  .primary-nav li {
+    list-style: none; }
 
-.primary-nav div {
-  background-color: red;
-  width: 22%;
-  margin-left: 3%;
-  text-align: center;
-  font-size: 24px;
-  color: white; }
+.primary-nav img {
+  width: 250px;
+  height: 50px;
+  margin-left: 10px; }
 
 .cameraman img {
   height: 400px;
@@ -5859,30 +5860,118 @@ body {
 
 .articles {
   background-color: white;
-  height: 400px;
+  height: 350px;
   width: 100%;
-  margin-left: 1%;
   margin-top: 40px; }
+  .articles h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    font-size: 30px; }
+  .articles h4 {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    margin-top: 180px; }
+  .articles p {
+    margin-left: 10%;
+    position: absolute;
+    margin-top: 200px; }
+  .articles a {
+    margin-left: 10%;
+    color: red;
+    margin-left: 35%;
+    position: absolute;
+    margin-top: 300px; }
 
-.articles h1 {
-  margin-left: 10%;
-  position: absolute; }
+.boarders {
+  margin-top: 10px; }
+  .boarders img {
+    border: white 5px solid;
+    padding: 0; }
 
-.articles h4 {
-  margin-left: 10%;
-  position: absolute;
-  margin-top: 200px; }
+.smaller {
+  height: 200px;
+  width: 100%; }
 
-.articles p {
-  margin-left: 10%;
-  position: absolute;
-  margin-top: 220px; }
+.high {
+  height: 420px;
+  width: 100%; }
 
-.articles a {
-  margin-left: 10%;
-  color: red;
-  margin-left: 35%;
-  position: absolute;
-  margin-top: 350px; }
+.long {
+  width: 100%;
+  margin-top: 20px;
+  height: 200px; }
+
+.skateboards img {
+  width: 100%;
+  height: auto;
+  border: white solid 10px;
+  padding: 0;
+  margin-top: 10px; }
+
+.theforms {
+  margin-top: 20px; }
+
+.bottom {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+.btn {
+  float: right; }
+
+.eachform {
+  margin-top: 10px;
+  width: 90%; }
+
+#exampleInputMessage1 {
+  height: 150px; }
+
+.social-nav-small {
+  display: inline-block; }
+
+.social-nav-small img {
+  width: 30px;
+  height: auto;
+  margin-top: 30px;
+  display: inline-block; }
+
+@media (max-width: 972px) {
+  .subscribe {
+    left: -250px;
+    position: absolute; }
+
+  .boarders img {
+    height: 300px;
+    margin-top: 20px; }
+
+  .theforms {
+    margin-left: 30px;
+    margin-top: 10px; } }
+@media (max-width: 768px) {
+  .cameraman {
+    margin-top: -200px; }
+
+  .media li {
+    margin-left: 10px; }
+
+  .subscribe {
+    left: -70%;
+    position: absolute; }
+
+  .primary-nav {
+    top: -250px;
+    left: 100px;
+    position: relative; }
+
+  .primary-nav ul {
+    width: 250px;
+    margin: 0 auto;
+    padding: 0; }
+    .primary-nav ul li {
+      padding: 0; }
+    .primary-nav ul img {
+      margin: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,9 +4,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 /* Import Bootstrap */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
+img {
+  max-width: 100%;
+}
+
+
+
+
 body{
-  background-image: url("images/skateboarder.jpeg");
-  background-repeat: no-repeat;
+  background-image: url("../images/skateboard-images/bg.jpg");
   background-size:100%;
 }
 
@@ -20,7 +26,7 @@ text-align: right;
 right:80px;
   margin-top: 30px;;
   font-size: 20px;
-  color:white;
+  color:black;
 }
 
 .social-links a{
@@ -37,16 +43,15 @@ display:inline-block;
 }
 
 .primary-nav{
-  margin-left: -3px;
+margin:auto;
+li{
+  list-style: none;
 }
-
-.primary-nav div{
-  background-color:red;
-  width:22%;
-  margin-left:3%;
-  text-align: center;
-  font-size: 24px;
-  color:white;
+}
+.primary-nav img{
+  width:250px;
+  height:50px;
+  margin-left: 10px;
 }
 
 .cameraman img{
@@ -59,30 +64,163 @@ display:inline-block;
 
 .articles{
   background-color:white;
-  height: 400px;
+  height: 350px;
   width:100%;
-  margin-left: 1%;
   margin-top:40px;
-}
-
-.articles h1{
-  margin-left: 10%;
-  position: absolute;
-}
-.articles h4{
+  h1{
     margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    font-size: 30px;
+  }
+  h4{
+    margin-left: 10%;
+    margin-right: 10%;
   position: absolute;
-  margin-top: 200px;
-}
-.articles p{
+  margin-top: 180px;
+  }
+  p{
     margin-left: 10%;
   position: absolute;;
-  margin-top: 220px;
-}
-.articles a{
+  margin-top: 200px;
+  }
+  a{
     margin-left: 10%;
   color:red;
   margin-left:35%;
   position: absolute;
-  margin-top: 350px;
+  margin-top: 300px;
+  }
+}
+
+.boarders{
+  margin-top: 10px;
+  img{
+    border: white 5px solid;
+    padding:0;
+  }
+}
+
+.smaller{
+  height:200px;
+width:100%;
+}
+.high{
+  height: 420px;
+  width:100%;
+}
+.long{
+  width:100%;
+  margin-top: 20px;
+  height:200px;
+}
+.names{
+  font-size: 30px;
+  color:white;
+  position: absolute;
+  top:50px;
+left:20%;
+}
+
+
+
+.skateboards img{
+  width:100%;
+  height:auto;
+  border:white solid 10px;
+  padding:0;
+  margin-top:10px;
+}
+
+.theforms{
+  margin-top: 20px;
+}
+.bottom{
+  background-color:white;
+  margin-top:20px;
+  margin-bottom: 40px;
+}
+
+.btn{
+float:right;
+}
+.eachform{
+  margin-top:10px;
+  width:90%
+}
+#exampleInputMessage1{
+  height:150px;
+}
+.social-nav-small{
+  display: inline-block;
+}
+.social-nav-small img{
+  width:30px;
+  height: auto;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.pointer img{
+  height: auto;
+  width:150px;
+  position: relative;
+  margin-top:-2600px;
+}
+
+
+
+
+@media(max-width: 972px){
+  .names{
+    font-size: 70px;
+  }
+  .subscribe {
+    left: -250px;
+    position:absolute;
+  }
+  .boarders img{
+    height:300px;
+    margin-top:20px;
+  }
+  .theforms{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .pointer{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px){
+
+.cameraman{
+  margin-top:-200px;
+}
+  .media li{
+    margin-left: 10px;
+  }
+  .subscribe {
+    left: -70%;
+    position:absolute;
+  }
+  .primary-nav{
+    top:-250px;
+    left:100px;
+    position:relative;
+  }
+  .primary-nav ul{
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      padding: 0;
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+
 }
