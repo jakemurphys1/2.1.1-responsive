@@ -1,0 +1,88 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body{
+  background-image: url("images/skateboarder.jpeg");
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+.subscribe-link{
+  float:right;
+  padding-left: 30px;
+  color:white;
+}
+.subscribe{
+text-align: right;
+right:80px;
+  margin-top: 30px;;
+  font-size: 20px;
+  color:white;
+}
+
+.social-links a{
+  color:white;
+}
+
+.media li{
+display:inline-block;
+}
+.media img{
+  height:70px;
+  width: auto;
+  border-bottom: lightgray 5px solid;
+}
+
+.primary-nav{
+  margin-left: -3px;
+}
+
+.primary-nav div{
+  background-color:red;
+  width:22%;
+  margin-left:3%;
+  text-align: center;
+  font-size: 24px;
+  color:white;
+}
+
+.cameraman img{
+  height:400px;
+  width:100%;
+  border:white solid 10px;
+  padding:0;
+  margin-top:10px;
+}
+
+.articles{
+  background-color:white;
+  height: 400px;
+  width:100%;
+  margin-left: 1%;
+  margin-top:40px;
+}
+
+.articles h1{
+  margin-left: 10%;
+  position: absolute;
+}
+.articles h4{
+    margin-left: 10%;
+  position: absolute;
+  margin-top: 200px;
+}
+.articles p{
+    margin-left: 10%;
+  position: absolute;;
+  margin-top: 220px;
+}
+.articles a{
+    margin-left: 10%;
+  color:red;
+  margin-left:35%;
+  position: absolute;
+  margin-top: 350px;
+}
